@@ -1,0 +1,39 @@
+<html>
+  <body>
+    <h1 id="showTotal"></h1>
+    <button onclick="addOne()">Add One </button>
+    
+    
+    <script>
+      //Create global var to store the total
+      var total = 0;
+      
+      //Create function called addOne
+      function addOne() {
+      
+      //add one to the total var
+      total++;
+      
+      //now i will check to see if the total is less than 6
+      if (total < 6) {
+        //write the total to the showTotal ID
+        document.getElementById('showTotal').innerHTML = total;
+      }
+      //Else if the total is between 6-9 show the words "Warning computer will explode if you continue" to the showTotal ID
+      else if ((total > 5) && (total < 10)) {
+        document.getElementById('showTotal').innerHTML = "Warning, computer will explode if you continue!"
+        
+      }
+      
+      
+      //write the words "STAHP" to the showTotal
+      else {
+        document.getElementById('showTotal').innerHTML = "Computer will Blow up in, 10 seconds.";
+      }
+      
+      
+      }
+    </script>
+  
+  </body>
+</html>
